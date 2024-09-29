@@ -16,12 +16,9 @@ public class PlayerMovement : MonoBehaviour
 
     //[SerializeField] Animator anim;
 
-    private GameManager gameManager;
-
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     void Update()
@@ -54,8 +51,8 @@ public class PlayerMovement : MonoBehaviour
 
         //if (movement.x == 0 && movement.y == 0) anim.SetBool("isMoving", false);
 
-        if (movement.x > 0 && !isFacingRight) { Flip(); }
-        else if (movement.x < 0 && isFacingRight) { Flip(); }
+        if (movement.x > 0 && !isFacingRight) { Flip(); Debug.Log("Left"); }
+        else if (movement.x < 0 && isFacingRight) { Flip(); Debug.Log("Right"); }
     }
 
     public void SetCanMove(bool canMove)
