@@ -4,13 +4,22 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    enum State
+    {
+        TITLE,
+        GAME,
+        CUTSCENE,
+        GAME_DEAD,
+        GAME_WIN
+    }
+
+    State state = State.TITLE;
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         

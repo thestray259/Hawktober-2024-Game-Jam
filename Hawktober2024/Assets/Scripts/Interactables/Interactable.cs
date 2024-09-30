@@ -25,6 +25,12 @@ public class Interactable : MonoBehaviour
 
     }
 
+    public void OnDialogue()
+    {
+        // pause game w/out menu popup
+        // start dislogue sequence 
+    }
+
     public void HealPlayer()
     {
         // heal to full health

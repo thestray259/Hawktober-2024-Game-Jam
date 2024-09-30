@@ -6,7 +6,8 @@ public class Player : MonoBehaviour
 {
     [SerializeField] PlayerMovement playerMovement;
 
-    public int health = 1;
+    public int health = 100;
+    public int maxHealth = 100;
     public bool isDead = false;
 
     // TODO
